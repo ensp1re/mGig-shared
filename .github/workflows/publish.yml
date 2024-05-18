@@ -21,8 +21,8 @@ jobs:
       - run: npm run build
       - run: |
           echo @ensp1re:https://npm.pkg.github.com/ > build/.npmrc
-          echo '//npm.pkg.github.com/:_authToken=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' >> build/.npmrc
+          echo '//npm.pkg.github.com/:_authToken=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' >> build/.npmrc
       - run: npm publish
         working-directory: ./build
         env:
-          NPM_TOKEN: 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
+          NPM_TOKEN: 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
