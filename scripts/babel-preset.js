@@ -13,7 +13,7 @@ module.exports = () => ({
         modules: isCommonJS ? 'commonjs' : false,
         targets: {
           esmodules: isESM ? true : undefined,
-          chrome: 70,
+          chrome: 70, //
         },
       },
     ],
