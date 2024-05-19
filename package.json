@@ -24,9 +24,6 @@
     "type": "git",
     "url": "git+https://github.com/ensp1re/mGig-shared.git"
   },
-     "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "exports": {
     ".": {
       "import": "./esm/index.js",
