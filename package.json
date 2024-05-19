@@ -18,11 +18,11 @@
     "trailingComma": "es5"
   },
   "keywords": [],
-  "name": "@ensp1re/mGig-shared",
+  "name": "@ensp1re/mgig-shared",
   "author": "Enspire",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ensp1re/mGig-shared.git"
+    "url": "git+https://github.com/ensp1re/mgig-shared.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
