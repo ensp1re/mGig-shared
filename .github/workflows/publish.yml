@@ -18,9 +18,9 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: |
-          echo @ensp1re:registry=https://npm.pkg.github.com/ > .npmrc
-          echo "//npm.pkg.github.com/:_authToken=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" >> .npmrc
+          echo @ensp1re:registry=https://npm.pkg.github.com/
+          echo //npm.pkg.github.com/:_authToken=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
       - run: npm publish
         working-directory: ./build
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: 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
