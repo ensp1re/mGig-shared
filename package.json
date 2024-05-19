@@ -22,7 +22,7 @@
   "author": "Enspire",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ensp1re/mGig-shared.git"
+    "url": "git+https://github.com/ensp1re/mGig-shared.git"
   },
   "publishConfig": {
     "@ensp1re:registry": "https://npm.pkg.github.com"

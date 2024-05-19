@@ -39,5 +39,3 @@ export const winstonLogger = (elasticsearchNode: string, name: string, level: st
   return logger
 }
 
-
-const e = (): void => {}
