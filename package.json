@@ -22,10 +22,10 @@
   "author": "Enspire",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ensp1re/mGig-shared.git"
+    "url": "https://github.com/ensp1re/mGig-shared.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@ensp1re:registry": "https://npm.pkg.github.com"
   },
   "exports": {
     ".": {
