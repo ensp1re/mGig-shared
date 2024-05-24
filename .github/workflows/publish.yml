@@ -37,5 +37,6 @@ jobs:
 
       - name: Publish package
         run: npm publish
+        working-directory: ./build
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
