@@ -4,9 +4,9 @@
   "main": "index.js",
   "description": "Helpers library for Mgig app",
   "scripts": {
-    "build": "cross-env NODE_ENV=production npm run build:cjs && cross-env NODE_ENV=production npm run build:esm && tsc --outDir build/src && node scripts/build-package.js",
-    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel src --presets=./scripts/babel-preset.js --extensions .ts,.tsx --ignore src/**/*.specs.tsx --out-dir build/cjs --source-maps",
-    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel src --presets=./scripts/babel-preset.js --extensions .ts,.tsx --ignore src/**/*.specs.tsx --out-dir build/esm --source-maps"
+    "build": "NODE_ENV=production npm run build:cjs && cross-env NODE_ENV=production npm run build:esm && tsc --outDir build/src && node scripts/build-package.js",
+    "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel src --presets=./scripts/babel-preset.js --extensions .ts,.tsx --ignore src/**/*.specs.tsx --out-dir build/cjs --source-maps",
+    "build:esm": "NODE_ENV=production BABEL_ENV=esm babel src --presets=./scripts/babel-preset.js --extensions .ts,.tsx --ignore src/**/*.specs.tsx --out-dir build/esm --source-maps"
   },
   "prettier": {
     "printWidth": 80,
@@ -21,7 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/ensp1re/mgig-shared.git"
   },
-  "publishConfig": {
+ "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "files": [
@@ -30,18 +30,13 @@
   ],
   "exports": {
     ".": {
-      "import": "./esm/index.js",
-      "require": "./cjs/index.js"
-    },
-    "./icons": {
-      "import": "./esm/icons/index.js",
-      "require": "./cjs/icons/index.js"
+      "import": "./src/index.js",
+      "require": "./src/index.js"
     }
   },
   "types": "./src/index.d.ts",
   "dependencies": {
     "@elastic/elasticsearch": "^8.13.1",
-    "@ensp1re/mgig-shared": "^0.3.2",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/winston": "^2.4.4",
     "cloudinary": "^2.2.0",
