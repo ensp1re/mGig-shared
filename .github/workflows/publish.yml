@@ -25,4 +25,4 @@ jobs:
       - run: npm publish
         working-directory: ./build
         env:
-          NPM_TOKEN: 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
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
