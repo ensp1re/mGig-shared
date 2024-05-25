@@ -1,5 +1,5 @@
 {
-  "version": "0.3.2",
+  "version": "0.6.0",
   "license": "MIT",
   "main": "index.js",
   "description": "Helpers library for Mgig app",
@@ -21,7 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/ensp1re/mgig-shared.git"
   },
-  "publishConfig": {
+   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "files": [
@@ -30,18 +30,13 @@
   ],
   "exports": {
     ".": {
-      "import": "./esm/index.js",
-      "require": "./cjs/index.js"
-    },
-    "./icons": {
-      "import": "./esm/icons/index.js",
-      "require": "./cjs/icons/index.js"
+      "import": "./src/index.js",
+      "require": "./src/index.js"
     }
   },
   "types": "./src/index.d.ts",
   "dependencies": {
     "@elastic/elasticsearch": "^8.13.1",
-    "@ensp1re/mgig-shared": "^0.3.2",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/winston": "^2.4.4",
     "cloudinary": "^2.2.0",
