@@ -3,11 +3,11 @@
   "license": "MIT",
   "main": "index.js",
   "description": "Helpers library for Mgig app",
-"scripts": {
-  "build": "cross-env NODE_ENV=production npm run build:cjs && cross-env NODE_ENV=production npm run build:esm && tsc --outDir build/src && node scripts/build-package.js",
-  "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel src --presets=./scripts/babel-preset.js --extensions .ts,.tsx --ignore src/**/*.specs.tsx --out-dir build/cjs --source-maps",
-  "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel src --presets=./scripts/babel-preset.js --extensions .ts,.tsx --ignore src/**/*.specs.tsx --out-dir build/esm --source-maps"
-},
+  "scripts": {
+    "build": "cross-env NODE_ENV=production npm run build:cjs && cross-env NODE_ENV=production npm run build:esm && tsc --outDir build/src && node scripts/build-package.js",
+    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel src --presets=./scripts/babel-preset.js --extensions .ts,.tsx --ignore src/**/*.specs.tsx --out-dir build/cjs --source-maps",
+    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel src --presets=./scripts/babel-preset.js --extensions .ts,.tsx --ignore src/**/*.specs.tsx --out-dir build/esm --source-maps"
+  },
   "prettier": {
     "printWidth": 80,
     "semi": true,
@@ -44,6 +44,7 @@
     "@types/jsonwebtoken": "^9.0.6",
     "@types/winston": "^2.4.4",
     "cloudinary": "^2.2.0",
+    "export": "^0.1.337",
     "express": "^4.19.2",
     "http-status-codes": "^2.3.0",
     "jsonwebtoken": "^9.0.2",
