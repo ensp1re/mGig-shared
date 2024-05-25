@@ -2,7 +2,7 @@
   "version": "0.5.0",
   "license": "MIT",
   "main": "index.js",
-  "description": "Helpers library for Jobber app",
+  "description": "Helpers library for Mgig app",
 "scripts": {
   "build": "cross-env NODE_ENV=production npm run build:cjs && cross-env NODE_ENV=production npm run build:esm && tsc --outDir build/src && node scripts/build-package.js",
   "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel src --presets=./scripts/babel-preset.js --extensions .ts,.tsx --ignore src/**/*.specs.tsx --out-dir build/cjs --source-maps",
@@ -16,7 +16,7 @@
   },
   "keywords": [],
   "name": "@ensp1re/mgig-shared",
-  "author": "Enspire",
+  "author": "ensp1re",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ensp1re/mgig-shared.git"
